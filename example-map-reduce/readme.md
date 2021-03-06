@@ -1,9 +1,12 @@
 In this tutorial you are going to learn the simple map-reduce functionality using an example. 
-Before you read this example you should go through the map reduce excercises in the lecture folder. 
+
+Before you read this example you should go through the map reduce excercises in the brightpsace.
 One of the excercise is for installing hadoop on ubuntu. Note that you might have to change the hadoop version numbers depending on what is the latest one.
 The current version is hadoop-3.1.2.tar.gz.
 
 Once you have the hadoop installed and assuming you have python on your machine, we can look at the examples below.
+
+*Note*: to get these files from this folder just clone the repository to your machine where you have installed hadoop
 
 # Dataset
 
