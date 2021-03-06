@@ -55,3 +55,9 @@ $ /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.1.2.jar -input tit
 ```
 
 Check the output and compare time
+
+# Finally 
+
+https://github.com/vu-topics-in-big-data-2021/examples/blob/main/example-map-reduce/colab/hadoop.ipynb 
+
+Follow the steps
