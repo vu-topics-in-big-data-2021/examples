@@ -1,0 +1,4 @@
+cat regular-reducer.py | ./regularmapper.py |sort -t '|' -k1,1 | ./regular-reducer.py 
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.1.2.jar -input title.basics.tsv -output /home/riaps/map-reduce/output -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py 
+
+
