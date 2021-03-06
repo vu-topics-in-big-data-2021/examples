@@ -2,7 +2,23 @@ In this tutorial you are going to learn the simple map-reduce functionality usin
 
 Before you read this example you should go through the map reduce excercises in the brightpsace.
 One of the excercise is for installing hadoop on ubuntu. Note that you might have to change the hadoop version numbers depending on what is the latest one.
-The current version is hadoop-3.1.2.tar.gz.
+The current version is hadoop-3.3.0.tar.gz.
+
+You can download it to your machine like this
+
+```
+wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
+tar -xzvf hadoop-3.3.0.tar.gz >/dev/null
+mv hadoop-3.3.0 /usr/local/hadoop
+```
+
+Note that this assumes the JAVA is already there on the machine. if you don't following works
+
+```
+apt-get install openjdk-8-jdk-headless
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
+
+```
 
 Once you have the hadoop installed and assuming you have python on your machine, we can look at the examples below.
 
@@ -54,7 +70,7 @@ Now use hadoop for it. Assuming you installed hadoop using the installtion pdf i
 ```
 $ cd using-the-hadoop-api
 $ ls title.basics.tsv
-$ /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.1.2.jar -input title.basics.tsv -output /home/riaps/map-reduce/output -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py 
+$ /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.0.jar -input title.basics.tsv -output /home/riaps/map-reduce/output -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py 
 ```
 
 Check the output and compare time
