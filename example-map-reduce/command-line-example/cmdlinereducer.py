@@ -11,7 +11,7 @@ values = []
 
 for line in sys.stdin:
     # Parse key and value
-    key, value = line.strip().split('\t',1)                                   
+    key, value = line.strip().split('|',1)                                   
 
      # If key has changed then one can finish processing the previous key
     if key != prev_key and prev_key is not None:
