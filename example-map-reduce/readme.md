@@ -58,6 +58,8 @@ First try to run this with 100 entries from title file
 
 ```
 $ cd using-the-hadoop-api
+$ wget https://datasets.imdbws.com/title.basics.tsv.gz
+$ gunzip title.basics.tsv.gz
 $ ls title.basics.tsv
 $ chmod +x *.py
 $ head -100 title.basics.tsv | ./mapper.py |sort -t '|' -k1,1 | ./reducer.py
