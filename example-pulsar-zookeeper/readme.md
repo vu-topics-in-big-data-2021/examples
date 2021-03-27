@@ -1,1 +1,1 @@
-This is where the pulsar notebook will be.
+The examples show pulsar and zookeeper operations. Do take a look at the [mqtt example](https://github.com/vu-topics-in-big-data-2021/examples/tree/main/example-mqtt) in the parent folder. MQTT is a very basic distributed publish subscribe system. We briefly reviewed it earler. However, MQTT does not provide any storage. kafka and Pulsar solve that problem. Zookeeper is required for fault tolerance and coordination of configuration data among the different nodes that are being used in the kafka/Pulsar cluster.
