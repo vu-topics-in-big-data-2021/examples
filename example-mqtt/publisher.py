@@ -4,7 +4,7 @@ import time
 import os
 import zmq
 import paho.mqtt.client as mqtt
-broker= "127.0.0.1"#local broker on your host machine
+broker= "test.mosquitto.org"#local broker on your host machine
 #"192.168.99.100" #"192.168.1.184""test.mosquitto.org" #Are available online brokers
 port = 2000
 topic1 = "RDS19"#Topic1 to use for the communication

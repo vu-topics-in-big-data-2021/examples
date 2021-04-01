@@ -3,7 +3,7 @@ import random
 import time
 import os
 import paho.mqtt.client as mqtt
-broker = "127.0.0.1"#"192.168.99.100" #"192.168.1.184"#"test.mosquitto.org"
+broker = "test.mosquitto.org"#"192.168.99.100" #"192.168.1.184"#"test.mosquitto.org"
 port = 2000
 topic = "RDS19"#topic to be used for communication
 
